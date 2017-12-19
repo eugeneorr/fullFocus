@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>listServlet</servlet-name>
+        <servlet-class>controllers.ListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>listServlet</servlet-name>
+        <url-pattern>/list/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>signUpServlet</servlet-name>
+        <servlet-class>controllers.SignUpServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>signUpServlet</servlet-name>
+        <url-pattern>/signUp/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>signInServlet</servlet-name>
+        <servlet-class>controllers.SignInServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>signInServlet</servlet-name>
+        <url-pattern>/signIn/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>controllers.backend.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/logout/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mainTaskServlet</servlet-name>
+        <servlet-class>controllers.MainTaskServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mainTaskServlet</servlet-name>
+        <url-pattern>/mainTask/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>removeGroupServlet</servlet-name>
+        <servlet-class>controllers.backend.RemoveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>removeGroupServlet</servlet-name>
+        <url-pattern>/remove/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addGroupServlet</servlet-name>
+        <servlet-class>controllers.AddGroupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addGroupServlet</servlet-name>
+        <url-pattern>/addGroup/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addTaskServlet</servlet-name>
+        <servlet-class>controllers.AddEditTaskServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addTaskServlet</servlet-name>
+        <url-pattern>/addTask/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>profileServlet</servlet-name>
+        <servlet-class>controllers.ProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>profileServlet</servlet-name>
+        <url-pattern>/profile/</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>shareUserServlet</servlet-name>
+        <servlet-class>controllers.ShareUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>shareUserServlet</servlet-name>
+        <url-pattern>/shareUser/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>watchUserServlet</servlet-name>
+        <servlet-class>controllers.WatchUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>watchUserServlet</servlet-name>
+        <url-pattern>/watchUser/</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
