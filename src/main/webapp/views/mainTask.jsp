@@ -20,7 +20,7 @@
 <main>
     <div class="main">
         <h1>Good afternoon, ${username}!</h1>
-        <h2>What is your main foucs for now?</h2>
+        <h2>What is your main focus for today?</h2>
         <div class="mainTask-form">
             <form action="/list/" method="POST">
                 <input type="text" name="mainTask">

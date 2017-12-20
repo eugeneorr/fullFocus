@@ -20,7 +20,7 @@ public class Auth {
     private Auth(String filename) {
         JsonParser jsonParser = new JsonParser();
         try {
-            JsonArray authArray = (JsonArray) jsonParser.parse(new FileReader("/Users/Eugene/Desktop/java_projects/fullfocus/src/main/database/" + filename));
+            JsonArray authArray = (JsonArray) jsonParser.parse(new FileReader("/Users/eagle/Desktop/FullFocus/fullfocus/src/main/database/" + filename));
             for (JsonElement jsonAuthElememt: authArray) {
                 JsonObject jsonUserObject = jsonAuthElememt.getAsJsonObject();
                 String username = jsonUserObject.get("username").getAsString();
@@ -57,7 +57,7 @@ public class Auth {
     public void addUser(String username, String password, boolean isTest) {
         authentication.add(new UserAuth(username, password));
         if (isTest) { return; }
-        try (Writer writer = new FileWriter("/Users/Eugene/Desktop/java_projects/fullfocus/src/main/database/auth.json")) {
+        try (Writer writer = new FileWriter("/Users/eagle/Desktop/FullFocus/fullfocus/src/main/database/auth.json")) {
             Gson gson = new GsonBuilder().create();
             writer.write(gson.toJson(authentication));
             writer.close();

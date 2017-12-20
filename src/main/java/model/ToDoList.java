@@ -22,7 +22,7 @@ public class ToDoList {
     private void parseDatabase(String filename) {
         JsonParser parser = new JsonParser();
         try {
-            Object obj = parser.parse(new FileReader("/Users/Eugene/Desktop/java_projects/fullfocus/src/main/database/" + filename));
+            Object obj = parser.parse(new FileReader("/Users/eagle/Desktop/FullFocus/fullfocus/src/main/database/" + filename));
             JsonArray jsonUsersArray = (JsonArray) obj;
             users = new ArrayList<>();
             for (JsonElement jsonUserElement: jsonUsersArray) {
@@ -74,7 +74,7 @@ public class ToDoList {
     }
 
     public void saveData(String filename) {
-        try (Writer writer = new FileWriter("/Users/Eugene/Desktop/java_projects/fullfocus/src/main/database/" + filename)) {
+        try (Writer writer = new FileWriter("/Users/eagle/Desktop/FullFocus/fullfocus/src/main/database/" + filename)) {
             Gson gson = new GsonBuilder().create();
             writer.write(gson.toJson(users));
             writer.close();

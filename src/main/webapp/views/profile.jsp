@@ -24,7 +24,7 @@
     <table style="width: 100%; margin-left: 0; margin-right: 0; margin-bottom: 0; margin-top: -20px">
         <tr>
             <th style="width: 50%">
-                <h1>Access to view your list for users:</h1>
+                <h1>Access to observe your list for users:</h1>
             </th>
             <th style="width: 50%">
                 <h1>Watch users lists:</h1>
@@ -32,7 +32,7 @@
         </tr>
         <tr style="margin-top: -10px">
             <td style="width: 50%">
-                <ul style="overflow: auto; height: 320px; max-height: 320px; text-align: left">
+                <ul style="overflow: auto; height: 350px; max-height: 350px; text-align: left">
                     <c:if test="${sharedUsers.size() > 0}">
                         <c:forEach items="${sharedUsers}" var="current">
                             <h3 style="height: 30px">${current}
@@ -52,7 +52,7 @@
                 </ul>
             </td>
             <td style="width:50%; margin-top: -5px">
-                <ul style="overflow: auto; height: 320px; max-height: 320px; text-align: center">
+                <ul style="overflow: auto; height: 350px; max-height: 350px; text-align: center">
                     <c:if test="${usersToWatch.size() > 0}">
                         <c:forEach var = "i" begin = "0" end = "${usersToWatch.size() - 1}">
                             <form action="/watchUser/" method="GET">

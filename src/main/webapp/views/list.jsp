@@ -43,7 +43,7 @@
             </tr>
             <tr style="margin-top: -10px">
                 <td style="width: 20%">
-                    <ul style="overflow: auto; max-height: 400px; text-align: left">
+                    <ul style="overflow: auto; height: 460px; max-height: 460px; text-align: left; vertical-align: top;">
                         <c:forEach var = "i" begin = "0" end = "${user.groups.size() > 0 ? user.groups.size() - 1 : 0}">
                             <c:if test="${user.groups.size() > 0}">
                                 <form action="/list/" method="post">
@@ -57,7 +57,7 @@
                     </ul>
                 </td>
                 <td style="width: 5%">
-                    <ul style="overflow: auto; max-height: 400px; text-align: left">
+                    <ul style="overflow: auto; height: 460px; max-height: 460px; text-align: left; vertical-align: top;">
                         <c:forEach var = "i" begin = "0" end = "${user.groups.size() > 0 ? user.groups.size() - 1 : 0}">
                             <c:if test="${user.groups.size() > 0}">
                                 <form action="/remove/" method="post">
@@ -70,7 +70,7 @@
                     </ul>
                 </td>
                 <td style="width:50%; margin-top: -5px">
-                    <ol style="overflow: auto; max-height: 400px; text-align: left">
+                    <ol style="overflow: auto; height: 460px; max-height: 460px; text-align: left; vertical-align: top;">
                         <c:forEach var = "i" begin = "0" end = "${(user.groups.size() > 0 && user.groups.get(groupIndex).tasks.size() > 0) ? (user.groups.get(groupIndex).tasks.size() - 1) : 0}">
                             <c:if test="${user.groups.size() > 0 && user.groups.get(groupIndex).tasks.size() > 0}">
                                 <li style="border: 0; padding-left: 20px; font-family: 'Avenir Next'; font-weight: normal; font-size: 30px;">
@@ -86,7 +86,7 @@
                         </c:forEach>
                     </ol>
                 </td>
-                <td style="width: 10%">
+                <td style="width: 10%; height: 460px; max-height: 460px; text-align: left; vertical-align: top;">
                     <c:forEach var = "i" begin = "0" end = "${(user.groups.size() > 0 && user.groups.get(groupIndex).tasks.size() > 0) ? (user.groups.get(groupIndex).tasks.size() - 1) : 0}">
                         <c:if test="${user.groups.size() > 0 && user.groups.get(groupIndex).tasks.size() > 0}">
                             <form action="/addTask/" method="get">
@@ -98,7 +98,7 @@
                         </c:if>
                     </c:forEach>
                 </td>
-                <td style="width: 10%">
+                <td style="width: 10%; height: 460px; max-height: 460px; text-align: left; vertical-align: top;">
                     <c:forEach var = "i" begin = "0" end = "${(user.groups.size() > 0 && user.groups.get(groupIndex).tasks.size() > 0) ? (user.groups.get(groupIndex).tasks.size() - 1) : 0}">
                         <c:if test="${user.groups.size() > 0 && user.groups.get(groupIndex).tasks.size() > 0}">
                             <form action="/remove/" method="post">
@@ -112,7 +112,7 @@
                 </td>
             </tr>
         </table>
-        <a style="font-size: 20px;text-decoration: none; font-family: 'Avenir Next'; font-weight: normal;margin-left: 5%" href="/addGroup/">+ Add group</a>
+        <a style="font-size: 20px;text-decoration: none; color: #333; font-family: 'Avenir Next'; font-weight: normal;margin-left: 5%" href="/addGroup/">+ Add group</a>
     </div>
 </body>
 </html>
