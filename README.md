@@ -7,9 +7,9 @@ Full Focus - To do list
 
 ## Запуск:
 
--Java SE Development Kit 7
--Веб-сервер Tomcat
--Сборщик проектов Maven 3.3.9
+- Java SE Development Kit 7
+- Веб-сервер Tomcat
+- Сборщик проектов Maven 3.3.9
 
 Для запуска Вам потребуется:
 
